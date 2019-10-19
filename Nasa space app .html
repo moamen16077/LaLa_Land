@@ -1,0 +1,185 @@
+<html>
+<style>
+   
+    h1 {
+        color: rgb(131, 131, 136);
+        font-size: 32;
+    } 
+    .title { 
+        color: #225c59;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 32px
+    } 
+
+    .text {
+        color: #00b5a0;
+        font-size: 20px;
+    } 
+
+    #topofpage {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    } 
+
+    #graph1 {
+        margin-right: 140px;
+    }  
+
+    #graph {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }  
+
+    #center {
+        margin: 25%;
+        margin-top: 0%;
+    }  
+
+    #figfinal {
+        margin-left: 50px;
+    }   
+</style>
+
+<head>
+    <title>textbox</title>
+
+<body>
+    <div>
+        <div id="topofpage">
+            <img src="img/logo team.png" id="logog_team" width="180">
+            <h1>
+                CO2 Eating Bactira
+            </h1>
+            <img id=logo_nasa src="img/download.png" width="220"> </img>
+        </div>
+        <div id="center">
+            <h2 class="title">
+                Abstract
+            </h2>
+            <p class=text>
+                Amazon fires…
+                Lack of oxygen…
+                <br></br>
+                Raising of temperature…
+                <br></br>
+                Our planet is dying!! Did you ask yourself about the reason?
+            </p>
+            <h3 class="title">
+                Introduction
+            </h3>
+            <p class=text>
+                Ok, let us tell you about the monster which causes these problems…. Global warming
+                <br></br>
+                Global warming that depends on our green-house enemy (CO2) so we want to save our earth from its danger.
+                <br></br>
+                <div id=graph>
+                    <img id="graph1" src="img/12.jpg" width="410"> </img>
+                    <img src="img/15.jpg" width="420"> </img>
+                </div>
+            </p>
+            <h4 class=title>
+                Solution
+            </h4>
+            <p class=text>
+                We want to consume (CO2) and make it reusable in a good way by using a thermophilic bacterium which
+                called:
+                clostridium thermocellum (C.T.) its cellulolytic and had the ability to convert a cellulosic substrate
+                into
+                products including (CO2) by using the process of fermentation and live in anaerobic, thermophilic
+                environments
+                and will most likely interact with organisms
+                that have cellulose such as
+                eukaryotic plants.
+            </p>
+            <h5 class=title>
+                Scientific Way
+            </h5>
+            <p class=text>
+                The bacteria reuse the carbon dioxide by making an inverse process of fermentation which can be
+                classified
+                into
+                2 stages:
+                <br></br>
+                • CO2 + Acetyl COA RPFor> pyruvate.
+                <br></br>
+                • Pyruvate PFL> products + Acetyl COA.
+                <br></br>
+                And these 2 stages occur in the presence of (HCO3) + cellobiose.
+            </p>
+            <form action="">
+                <p>
+                    <labal>
+                        Enter CO2 Read
+                        <form id="form" onsubmit="return false;">
+                            <input type="text" size="25" maxlength="5" id="userInput" />
+                            <input type="submit" size="25" maxlength="5" onclick="print();" />
+                        </form>
+                        <script>
+                            function print() {
+                                var input = document.getElementById("userInput").value;
+                                co = input * 0.245;
+                                if (co < 20) {
+                                    out = "Low";
+                                } else if (co > 20) {
+                                    out = "High";
+                                } else if (co = 20) {
+                                    out = "Fit";
+                                }
+                                alert(out);
+                            }
+                        </script>
+                    </labal>
+                </p>
+            </form>
+            <h6 class=title>
+                Recommended Solution
+            </h6>
+            <p class=text>
+                We want to consume (CO2) and make it reusable in a good way by using a thermophilic bacterium which
+                called:
+                clostridium thermocellum (C.T.) its cellulolytic and had the ability to convert a cellulosic substrate
+                into
+                products including (CO2) by using the process of fermentation and live in anaerobic, thermophilic
+                environments
+                and will most likely interact with organisms
+                that have cellulose such as
+                eukaryotic plants.
+            </p>
+            <img id="Figfinal" src="img/fig.png" width="420"> </img>
+            <h7 class=title>
+                APA Citations
+            </h7>
+            <p class=text>
+                DOE/National Renewable Energy Laboratory. (2016, November 1). How a bacterium, clostridium thermocellum,
+                utilizes both carbon dioxide, cellulose. ScienceDaily. Retrieved October 19, 2019 from
+                www.sciencedaily.com/releases/2016/11/161101153026.htm
+                <br></br>
+                Lynd, L.R., Zyl, W.H., Mcbride, J.E., & Laser, M.S. (2005). Consolidated bioprocessing of cellulosic
+                biomass: an update. Current opinion in biotechnology, 16 5, 577-83 .
+                <br></br>
+                Researchers Discover How a Bacterium, Clostridium Thermocellum, Utilizes Both Co2 and Cellulose
+                Science staff
+                -https://phys.org/news/2016-11-bacterium-clostridium-thermocellum-co2-cellulose.html?fbclid=IwAR2SO34bZl1-81ELidsIdzaunFr4zXcLl8UuJNa1Vzw8HjSv0_f7-X7Gl50
+                <br></br>
+                Xiong, W., Lin, P. P., Magnusson, L., Warner, L., Liao, J. C., Maness, P., . . . National Renewable
+                Energy Lab. (NREL), Golden, CO (United States). (2016). CO₂-fixing one-carbon metabolism in a
+                cellulose-degrading bacterium clostridium thermocellum. Proceedings of the National Academy of Sciences
+                of the United States of America, 113(46), 13180-13185. doi:10.1073/pnas.1605482113
+            </p>
+        </div>
+    </div>
+</body>
+</head>
+<script>
+
+</script>
+
+</html>
